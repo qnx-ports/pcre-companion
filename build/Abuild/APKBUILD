@@ -3,7 +3,7 @@
 # Maintainer: Ethan Leir <eleir@qnx.com>
 pkgname=pcre
 pkgver=8.45
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="Perl-compatible regular expression library"
 url="https://www.pcre.org/"
 arch="all"
@@ -79,7 +79,6 @@ tools() {
     mv "$pkgdir"/usr/bin "$subpkgdir"/usr/
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 91bff52eed4a2dfc3f3bfdc9c672b88e7e2ffcf3c4b121540af8a4ae8c1ce05178430aa6b8000658b9bb7b4252239357250890e20ceb84b79cdfcde05154061a  pcre-8.45.tar.bz2
 "
